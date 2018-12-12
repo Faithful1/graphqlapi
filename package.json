@@ -1,0 +1,27 @@
+{
+  "name": "mern",
+  "version": "1.0.0",
+  "description": "This application demonstrates graphql API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Faithful1/graphqlapi.git"
+  },
+  "author": "Faithful",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Faithful1/graphqlapi/issues"
+  },
+  "homepage": "https://github.com/Faithful1/graphqlapi#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.8"
+  }
+}
