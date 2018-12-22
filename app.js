@@ -45,7 +45,15 @@ app.use(
     `),
     rootValue: {
       events: () => {
-        return events
+        Event.find()
+          .then(events => {
+            return events.map(event => {
+              return { ...event._doc, _id: event._doc._id.toString() }
+            })
+          })
+          .catch(err => {
+            throw err
+          })
       },
       createEvent: (args) => {
         const event = new Event({
