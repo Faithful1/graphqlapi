@@ -48,7 +48,7 @@ app.use(
         Event.find()
           .then(events => {
             return events.map(event => {
-              return { ...event._doc, _id: event._doc._id.toString() }
+              return { ...event._doc, _id: event.id.toString() }
             })
           })
           .catch(err => {
@@ -84,7 +84,7 @@ mongoose
     }@cluster0-uot4e.mongodb.net/${process.env.MONGO_DB}?retryWrites=true`
   )
   .then(() => {
-    app.listen(3000)
+    app.listen(3001)
   })
   .catch(err => {
     console.log(err)
