@@ -19,9 +19,11 @@
   "homepage": "https://github.com/Faithful1/graphqlapi#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "express-graphql": "^0.7.1",
-    "graphql": "^14.0.2"
+    "graphql": "^14.0.2",
+    "mongoose": "^5.4.0"
   },
   "devDependencies": {
     "nodemon": "^1.18.8"
