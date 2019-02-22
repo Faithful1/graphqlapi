@@ -1,4 +1,4 @@
-This application demonstrates graphql API
+This application demonstrates my first ever graphql API
 
 It is an Events Management Application
 
